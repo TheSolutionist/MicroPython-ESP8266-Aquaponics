@@ -30,8 +30,8 @@ heartbeat = 1
 #MQTT Settings to connect to local Broker Rapsbery Pi
 rpi_mqtt_broker = '192.168.1.6'
 thingsp_mqtt_broker = "mqtt.thingspeak.com"
-channelID = "244865"
-apiKey = "ZMH5CZAJNJUALYRW"
+channelID = "XXXXXX"
+apiKey = "XXXXXX"
 tTransport = "tcp"
 tPort = 1883
 tTLS = None
@@ -44,7 +44,7 @@ def do_connect():
     if not sta_if.isconnected():
         print('connecting to network...')
         sta_if.active(True)
-        sta_if.connect('Quiero_Mas_Tacos', 'Escape2you')
+        sta_if.connect('XXXXXX', 'XXXXXX')
         while not sta_if.isconnected():
             pass
     print('network config:', sta_if.ifconfig())
